@@ -6,21 +6,21 @@
 </div>
 
 <div class="grid">
-    <div class="col-4">
+    <div class="col-12 sm:col-6 lg:col-4">
         <p-card header="UPPERCASE"
                 [subheader]="lowercaseName">
                 {{ lowercaseName | uppercase }}
         </p-card>
     </div>
 
-    <div class="col-4">
+    <div class="col-12 sm:col-6 lg:col-4">
         <p-card header="lowercase"
                 [subheader]="uppercaseName">
                 {{ uppercaseName | lowercase }}
         </p-card>
     </div>
 
-    <div class="col-4">
+    <div class="col-12 lg:col-4">
         <p-card header="TitleCase"
                 [subheader]="allName">
                 {{ allName | titlecase }}
@@ -37,9 +37,9 @@
 </div>
 
 <div class="grid">
-    <div class="col-6">
+    <div class="col-12 md:col-6">
         <p-card>
-            <ul>
+            <ol>
                 <li>date</li>
                 <li>date | date</li>
                 <li>date | date: 'short'</li>
@@ -47,21 +47,21 @@
                 <li>date | date: 'EE dd MMMM yyyy, hh:mm:ss a'</li>
                 <li>date | date: 'MMMM'</li>
                 <li>date | date: 'MMMM dd, yyyy'</li>
-            </ul>
+            </ol>
 
             <hr>
 
-            <ul>
+            <ol>
                 <li>date | date: 'long':'GMT-5':'es-MX'</li>
                 <li>date | date: 'long':'GMT+1':'fr'</li>
                 <li>date | date: 'long':'GMT+9':'ja'</li>
-            </ul>
+            </ol>
         </p-card>
     </div>
 
-    <div class="col-6">
+    <div class="col-12 md:col-6">
         <p-card>
-            <ul>
+            <ol>
                 <li>{{ date }}</li>
                 <li>{{ date | date }}</li>
                 <li>{{ date | date: 'short' }}</li>
@@ -69,15 +69,15 @@
                 <li>{{ date | date: 'EE dd MMMM yyyy, hh:mm:ss a' }}</li>
                 <li>{{ date | date: 'MMMM' }}</li>
                 <li>{{ date | date: 'MMMM dd, yyyy' }}</li>
-            </ul>
+            </ol>
 
             <hr>
             
-            <ul>
+            <ol>
                 <li>{{ date | date: 'long':'GMT-5':'es-MX' }}</li>
                 <li>{{ date | date: 'long':'GMT+1':'fr' }}</li>
                 <li>{{ date | date: 'long':'GMT+9':'ja' }}</li>
-            </ul>
+            </ol>
         </p-card>
     </div>
 </div>
